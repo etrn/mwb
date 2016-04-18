@@ -113,9 +113,17 @@
         <article class="contacts">
             <h1 id="contact">CONTACT ME</h1>
             <article class="form">
-                <label>NAME:</label>
-                <br>
-                <input
+                <form>
+                    <label for="name">NAME:</label>
+                    <br>
+                    <input id="name" type="text" name="NAME" min="5" pattern="[A-Z]">
+                    <label for="phone">PHONE:</label>
+                    <br>
+                    <input id="phone" type="text" name="PHONE" min="9" max="13" patter="[+]{1}[0-9]{12}">
+                    <label for="email">EMAIL:</label>
+                    <br>
+                    <input id="email" type="email" name="EMAIL" min="8">
+                </form>
             </article>
         </article>
         <footer>
