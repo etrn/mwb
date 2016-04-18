@@ -8,7 +8,8 @@
     <body>
         <header>
             <nav>
-                <img src="logo.png" alt="Taras Pashko Logo">
+                <img src="logotriangle.png" alt="Triangle Taras Pashko Logo">
+                <img src="logo.png" alt="Taras Pashko Name Logo"
                 <a href="#about">ABOUT</a>
                 <a href="#skills">SKILLS</a>
                 <a href="#works">WORKS</a>
@@ -113,16 +114,23 @@
         <article class="contacts">
             <h1 id="contact">CONTACT ME</h1>
             <article class="form">
-                <form>
+                <form method="get" action="">
                     <label for="name">NAME:</label>
                     <br>
-                    <input id="name" type="text" name="NAME" min="5" pattern="[A-Z]">
+                    <input id="name" type="text" name="NAME" required/>
                     <label for="phone">PHONE:</label>
                     <br>
-                    <input id="phone" type="text" name="PHONE" min="9" max="13" patter="[+]{1}[0-9]{12}">
+                    <input id="phone" type="text" name="PHONE" required/><!How to determine from what country user is (IP) and prupose him his country phone code!>
                     <label for="email">EMAIL:</label>
                     <br>
-                    <input id="email" type="email" name="EMAIL" min="8">
+                    <input id="email" type="email" name="EMAIL" required/>
+                    <label for="message">MESSAGE:</label>
+                    <br>
+                    <textarea id="message" rows="5" name="message"></textarea>
+                    <br>
+                    <label for="send"><!How is right to make the send button as i want to?!>
+                    <input id="send" type="submit" value="SEND">
+                    </label>
                 </form>
             </article>
         </article>
