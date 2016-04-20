@@ -1,3 +1,32 @@
+@font-face {
+    font-family: segoeui;
+    src: url(segoeui.ttf);
+}
 body {
-    background-color: rgb(137, 255, 198);
+    background-color: #8ee0c2;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'segoeui', sans-serif;
+}
+nav {
+    position: fixed;
+    top:20px;
+    background-color: #469a7b;
+}
+main {
+    padding-top: 200px;
+}
+.about_who, .about_where, .about_what {
+    display: inline;
+}
+h1 {
+    font-size: 3em;
+    letter-spacing: 10px;
+    text-align: center;
+}
+h2 {
+    font-size: 2em;
+}
+p {
+    font-size: 1em;
 }
