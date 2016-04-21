@@ -15,3 +15,11 @@ body {
 #menu_mob_epx {
     display: none;
 }
+nav {
+    position: fixed;
+    top:20px;
+    background-color: #469a7b;
+    border-radius: 30px;
+    opacity: 50;
+    width: 100%;
+}
