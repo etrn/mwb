@@ -1,20 +1,24 @@
 @font-face {
     font-family: segoeui;
-    src: url(segoeui.ttf);
+    src: url(\font\segoeui.ttf);
 }
 body {
     background-color: #8ee0c2;
     font-size: 18px;
     color: #fff;
     font-family: 'segoeui', sans-serif;
+    margin: 0 auto;
 }
 nav {
     position: fixed;
     top:20px;
     background-color: #469a7b;
+    border-radius: 30px;
+    opacity: 50;
+    width: 100%;
 }
 main {
-    padding-top: 200px;
+    margin-top: 200px;
 }
 .about_who, .about_where, .about_what {
     display: inline;
