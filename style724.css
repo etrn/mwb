@@ -9,3 +9,9 @@ body {
     font-family: 'segoeui', sans-serif;
     margin: 0 auto;
 }
+#menu_mob {
+    display: none;
+}
+#menu_mob_epx {
+    display: none;
+}
