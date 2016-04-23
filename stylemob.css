@@ -1,32 +1,134 @@
 @font-face {
     font-family: segoeui;
-    src: url(\font\segoeui.ttf);
+    src: url(segoeui.ttf);
 }
 body {
     background-color: #8ee0c2;
     font-size: 18px;
     color: #fff;
     font-family: 'segoeui', sans-serif;
-    margin: 0 auto;
-    text-align: center;
 }
+
 #menu_mob {
-    float: right;
-    margin-top: 68px;
+    top: 68px;
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
 }
-#menu_mob_epx {
+#menu_mob_exp {
     display: none;
-    float: right;
-    margin-top: 67px;
+    top: 67px;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    margin-right: 44px;
 }
 h1 {
     font-size: 60px;
+    letter-spacing: 10px;
 }
 nav {
     display: none;
-    width: 100%;
+    max-width: 640px;
     height: 885px;
+    background: rgba(70, 154, 123, 0.8);
+    position: relative;
 }
 main {
     margin-top: 375px;
+    text-align: center;
+}
+header {
+    display: inline-block;
+}
+#logo {
+    left: 40px;
+    top: 58px;
+    z-index: 2;
+    position: absolute;
+}
+#logotriangle {
+    top: 28px;
+    left: 260px;
+    z-index: 3;
+    position: absolute;
+}
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+.contacts {
+    background-color: #fff;
+    color: #8ee0c2;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 32px;
+}
+.form {
+    font-size: 40px;
+    margin-top: 86px;
+    text-align: left;
+    max-width: 480px;
+}
+input {
+    border: 4px solid #8ee0c2;
+    max-width: 480px;
+}
+textarea {
+    border: 4px solid #8ee0c2;
+    max-width: 480px;
+}
+#send {
+    color: #fff;
+    background-color: #8ee0c2;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    width: 100%;
+    text-align: center;
+}
+footer {
+    background-color: #fff;
+    color: #99a4a0;
+    font-size: 16px;
+    text-align: center;
+}
+.testimonails {
+    font-size: 36px;
+    padding-bottom: 400px;
+    margin-bottom: 135px;
+    padding-top: 265px;
+}
+.thanks {
+    font-size: 48px;
+    margin-bottom: 210px;
+    letter-spacing: 1px;
+}
+.grey {
+    background-color: #99a4a0;
 }

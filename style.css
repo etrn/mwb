@@ -1,14 +1,12 @@
 @font-face {
     font-family: segoeui;
-    src: url(\font\segoeui.ttf);
+    src: url(segoeui.ttf);
 }
 body {
     background-color: #8ee0c2;
     font-size: 18px;
     color: #fff;
     font-family: 'segoeui', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
 }
 #menu_mob {
     display: none;
@@ -25,9 +23,8 @@ body {
 nav {
     position: fixed;
     top:20px;
-    background-color: #469a7b;
+    background: rgba(70, 154, 123, 0.8);
     border-radius: 30px;
-    opacity: 50;
     width: 100%;
 }
 main {
@@ -51,4 +48,33 @@ h2 {
 }
 p {
     font-size: 1em;
+}
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
 }
