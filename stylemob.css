@@ -118,11 +118,14 @@ footer {
     font-size: 16px;
     text-align: center;
 }
-.testimonails {
+.testimonail {
     font-size: 36px;
     padding-bottom: 400px;
     margin-bottom: 135px;
-    padding-top: 265px;
+    padding-top: 55px;
+}
+.testimonials{
+    padding-top: 115px;
 }
 .thanks {
     font-size: 48px;
