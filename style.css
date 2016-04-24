@@ -30,6 +30,7 @@ nav {
     background: rgba(70, 154, 123, 0.8);
     border-radius: 30px;
     width: 100%;
+    z-index: 101;
 }
 main {
     margin-top: 200px;

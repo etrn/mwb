@@ -29,13 +29,14 @@ nav {
     top:20px;
     background: rgba(70, 154, 123, 0.8);
     border-radius: 30px;
-    opacity: 50;
+    width: 100%;
+    z-index: 101;
 }
 main {
-    margin-top: 375px;
-    text-align: center;
+    margin-top: 200px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 a:link, a:visited {
     color: #fff;
