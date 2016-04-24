@@ -8,10 +8,14 @@ body {
     color: #fff;
     font-family: 'segoeui', sans-serif;
 }
+#aboutme {
+    position: absolute;
+    top: -20px;
+}
 #menu_mob {
     display: none;
 }
-#menu_mob_epx {
+#menu_mob_exp {
     display: none;
 }
 #logotriangle {
@@ -29,14 +33,13 @@ nav {
 }
 main {
     margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }    
 article {    
     margin-left: auto;
     margin-right: auto;
-}
-.about_who {
-    margin-left: 110px;
-    text-align: center;
 }
 h1 {
     font-size: 3em;
@@ -77,4 +80,153 @@ p {
 .slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
+}
+a:link, a:visited {
+    color: #fff;
+}
+a:active {
+    color: #99a4a0;
+}
+.grey {
+    background-color: #99a4a0;
+}
+.skills {
+    margin-top: 200px;
+    margin-bottom: 320px;
+}
+.sk1 {
+    max-width: 560px;
+    height: 10px;
+    background-color: #fff;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+}
+.sk2 {
+    max-width: 560px;
+    height: 10px;
+    background-color: #fff;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+}
+.sk3 {
+    max-width: 560px;
+    height: 10px;
+    background-color: #fff;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+}
+.sk4 {
+    max-width: 560px;
+    height: 10px;
+    background-color: #fff;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+}
+.sk1shadow {
+    max-width: 560px;
+    height: 10px;
+    background-color: #78c3a8;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+}
+.sk2shadow {
+    max-width: 560px;
+    height: 10px;
+    background-color: #78c3a8;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+}
+.sk3shadow {
+    max-width: 560px;
+    height: 10px;
+    background-color: #78c3a8;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+}
+.sk4shadow {
+    max-width: 560px;
+    height: 10px;
+    background-color: #78c3a8;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+}
+.sk1crcl {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.sk2crcl {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.sk3crcl {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.sk4crcl {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.contacts {
+    background-color: #fff;
+    color: #8ee0c2;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 32px;
+}
+.form {
+    font-size: 40px;
+    margin-top: 86px;
+    text-align: left;
+    max-width: 480px;
+}
+input {
+    border: 4px solid #8ee0c2;
+    max-width: 480px;
+}
+textarea {
+    border: 4px solid #8ee0c2;
+    max-width: 480px;
+}
+#send {
+    color: #fff;
+    background-color: #8ee0c2;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    width: 100%;
+    text-align: center;
+}
+footer {
+    background-color: #fff;
+    color: #99a4a0;
+    font-size: 16px;
+    text-align: center;
+}
+/*.link {
+    transition-property: background;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    border-radius: 30px;
+}*/
+.link {
+    display: none;
+}
+
+.work {
+    height: 100%;
 }
