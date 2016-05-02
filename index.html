@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Taras Pashko personal web-page</title>
         <link rel="icon" href="img/favicon-128.png" sizes="16x16 32x32 64x64 128x128" type="image/png">
         <link href="normalize.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel="stylesheet" media="(min-width: 300px) and (max-width: 640px)" href="stylemob.css">
         <link rel="stylesheet" media="(min-width: 641px) and (max-width: 959px)" href="stylemed.css">
         <link rel="stylesheet" media="(min-width: 960px)" href="style.css">
@@ -14,8 +15,8 @@
         <header>
             <div id="aboutme"></div>
             <nav>
-                <img src="img/logotriangle.png" alt="Triangle Taras Pashko Logo">
-                <img src="img/logo.png" alt="Taras Pashko Name Logo">
+                <img class="lgt" src="img/logotriangle.png" alt="Triangle Taras Pashko Logo">
+                <img class="lg"src="img/logo.png" alt="Taras Pashko Name Logo">
                 <a href="#aboutme">ABOUT ME</a>
                 <a href="#skills">SKILLS</a>
                 <a href="#works">WORKS</a>
@@ -31,7 +32,52 @@
             <article class="about">
                 <h1 hidden>ABOUT ME</h1>
                 <article class="about_who">
-                    <img class="about_img" src="img/who.png" alt="My vector portait">
+                    <img hidden class="about_img" src="img/who.png" alt="My vector portait">
+                    <div class="svg_img">
+                        <svg version="1.1" id="Layer_0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            	 viewBox="0 0 200 200" style="enable-background:new 0 0 200 200;" xml:space="preserve">
+                            <style type="text/css">
+                            	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+                            </style>
+                            <g>
+                            	<path class="st0" d="M58,75.5c0.2,0.3,0.3,0.6,0.5,0.8c0.3,0.2,0.6,0.5,0.8,0.7c-0.2-0.3-0.5-0.6-0.8-0.9
+                            		C58.4,75.9,58.2,75.7,58,75.5z"/>
+                            	<path class="st0" d="M100,0C44.8,0,0,44.8,0,100c0,55.2,44.8,100,100,100c55.2,0,100-44.8,100-100C200,44.8,155.2,0,100,0z
+                            		 M154.5,179h-32.5c-1-1-2-1.5-3.1-2.2c-5.9-3.9-5.8-5.2,0.5-8.4c5.4-2.7,8-7.9,11.4-12.3c0.6-0.8,0.9-1.9,0.4-2.8
+                            		c-3.5-6.6-3.2-13.8-3.6-21c-2,0.5-3.7,1.6-5,3.1c-6.6,7.1-14.7,7.5-23.4,5.7c-3.2-0.7-6.5-0.8-9-3.6c-1.9-2.2-3.6-1.3-4.4,1.2
+                            		c-2,6-3.1,12.2-3.6,18.4c-0.2,2.8,0.8,5.6,3.5,7.3c1.9,1.2,4.7,2.1,3.8,5c-0.9,2.9-3.2,5.6-6.3,5.5c-3.7-0.1-4.1,1.2-4.2,4.2H45.5
+                            		c-12-8.3-22-19.2-29.1-31.9c0.2-0.1,0.5-0.2,0.7-0.2c0.2-0.1,0.3-0.1,0.5-0.2c0.1,0,0.2-0.1,0.3-0.1c4-1.4,8-2.9,11.2-6.1
+                            		C30,139.6,31,139,32,139h0.1c1.3,0,2.6,0.8,3.8,1.6c0.2,0.2,0.5,0.5,0.7,0.7c0.1,0,0.1,0.1,0.2,0.1c0.1,0.1,0.2,0.1,0.4,0.2
+                            		c2.3,1.2,4.6,1.5,6.9,1.4c0,0,0,0,0.1,0c0,0,0.1,0,0.1,0c0.5,0,1.1-0.1,1.6-0.2c3-0.9,6-1.6,9-2.4c0,0,0,0,0.1,0
+                            		c7.3-2.3,14.6-4.6,20.9-9.3c0,0,0,0,0,0c3.8-3,4.5-5.6,2-10.3c-3.2-6.1-6-12.3-5.9-19.4c0-0.3,0-0.8-0.2-1
+                            		c-5-3.2-7.2-9.3-12.5-11.9c-1.1-0.5-2-0.9-2.3-1.4c-0.2,0-0.4,0-0.7,0.1c0.2-0.1,0.4-0.2,0.5-0.3c-0.1-0.4,0.3-0.9,1.3-1.7
+                            		c3.7-2.5,2.5-4.6,0.3-7.3c-0.6-0.7-1-2.4-1.4-4c-1.6-3.8-0.3-9,2.9-12.2c0.9-0.9,1.5-1.9,2-2.9c-0.3,0-0.6,0.1-0.8,0.1
+                            		c1.2-2.5,1.2-5.4,1.6-8C64,43,67,36.4,73.1,31.1c6.5-5.7,13.7-8.5,22.3-10.5c5-1.2,9.6-1.3,13.9-0.6c9.4,1.3,17.5,6.2,25.6,11.1
+                            		c5.8,3.5,8.6,10.8,11.7,17.1c0.9,1.8,1.7,3.6,2.9,5.2c1.9,2.6,2.1,5,0.7,7.9c-1.8,3.8-3,7.6,0.3,11.5c1.5,1.8,1.7,4.1,0.8,6.6
+                            		c-1.1,3.1-1.5,6.4-2.4,9.6c-0.6,2.1-1.4,4-4.4,3.8c-3-0.2-2.6-2.5-3.1-4.3c-1.8-5.9-2.5-12.5-9.7-15.1c-3.1-1.1-6-1.7-9.2-1.2
+                            		c-1.6,0.3-3.3,0.5-5,0.4c-1.5-0.1-3.2-0.7-3-2.6c0.2-2,2.3-2.3,3.5-1.7c4.6,2,9.2-1.8,13.7,0.3c0.9,0.4,1.6-0.3,1.7-1.3
+                            		c0-1.2-0.8-1.9-1.8-2c-3-0.3-6-0.1-8.8,1c-0.8,0.3-1.6,0.4-2.4-0.1c-1-1.6,2.2-3.3,0.1-4.4c-1.5-0.9-3.1,0.8-4.5,1.7
+                            		c-4.1,2.5-8.3,4.9-12.9,6.6c-0.9,0.3-1.6,0.7-2.2,1.3c-0.2,0.7-0.3,1.4-0.4,2.1c0,0.6,0.1,1.2,0.3,1.8c0.1,0.4,0.2,0.8,0.3,1.2
+                            		c0.1,0.1,0.1,0.1,0.2,0.2c0.8,1,1.1,2.1,1,3.2c1.2,4.5,0.7,10.4-2.6,15c-2.1,2.9-2,5.4,0.5,8.1c0.9,1,2.9,2.2,1,3.6
+                            		c-1.8,1.4-3.7,0.3-4.6-1.4c-2-3.7-1.9-7.6-0.4-11.6c0.2-0.7,0.7-1.4,1.1-2.2c0.7-0.6,1.1-1.4,1.2-2.5c0.1-0.4,0.1-0.8,0-1.1
+                            		c-0.5-5.2,0.3-10.5-3.9-14C88,72.6,81.4,74,74.8,75.2c-1.6,0.3-1.5,1.6-1.7,2.6c-1.1,4.4-1.8,8.8-1.6,13.4c0,0.7,0.2,1.5,0.3,2.3
+                            		c0.1,0.1,0.1,0.2,0.2,0.2c2.4,3.5,3.2,6.8,3.3,11c0,0.5,0.1,1,0.2,1.4c0,0.2-0.1,0.4-0.1,0.5c-0.2,1.5-0.8,3.6,0.6,4.2
+                            		c1.4,0.6,2.4,1.5,3.3,2.5c2.7,4,3.8,8.8,6.1,13c0.6,1,1.2,2,1.9,2.9c1,1,2,1.9,2.9,3.1c2.3,2,4.9,3.6,7.8,4.9
+                            		c1.6,0.7,3.2,1.3,4.9,1.7c0.3,0.1,0.5,0.2,0.8,0.3c1.1,0.4,2.3,0.2,3.5,0.3c1,0.1,2,0,2.9-0.2c1.6-0.2,3.2-0.7,4.7-1.4
+                            		c2.4-1.2,4.5-2.9,6.1-4.9c3.5-1.9,6.9-3.9,9.9-7.6c0.4-0.5,0.7-1.1,0.9-1.6c0.2,0,0.4,0,0.6,0c-0.1,2.6-2.7,5.1-0.8,7.9
+                            		c0.7,1.1,1.7,1.8,2.7,2.3c1,0.3,2,1,2.8,1.5c4.9,2.8,9.5,6.2,14.4,9c4.1,2.2,8.2,4,12.9,4.5c1.9-0.2,3.8-0.2,5.5,0
+                            		c3.7-0.2,7.4,0.9,10.5,3.3C173.6,162.8,164.8,171.9,154.5,179z M139.1,110.7c-2.4-4.8-2.2-8.4,0.9-12.4
+                            		C140.1,102.4,140.3,106.1,139.1,110.7z M118.6,117.5c0.2,1.5-1.2,1.9-2.2,2.2c-3.6,1.2-7.2,0.1-11,0.4c-3.6-0.8-7.5,1.1-11.1-0.9
+                            		c-1-0.6-2.4-1.1-2.2-2.4c0.2-1.6,1.7-1.2,2.8-1.1c7.1,0.2,14.2,0.5,21.3,0.8c0.8,0,1.8,0,2.2,0.6c0.1,0,0.2,0,0.3,0
+                            		c-0.1,0.1-0.1,0.2-0.2,0.3C118.5,117.4,118.5,117.4,118.6,117.5z M88.7,80.9C88.7,80.9,88.7,80.9,88.7,80.9c-2.1,0-4.3,0.3-6.4,0.2
+                            		c-2-0.1-2.6-1.3-1.3-3c1.7-2.1,11.3-3.7,13.6-2.2c1.2,0.8,2.7,1.8,2.3,3.5c-0.4,1.9-2.1,1-3.3,1.1C92,80.6,90.4,80.8,88.7,80.9z
+                            		 M110.5,102.3c1.5,0.5,2.8,1.3,2.9,3c0.1,1.6-1.2,1.9-2.5,1.6c-1.4-0.3-3.1-0.9-3-2.7C108,102.8,109.2,102.3,110.5,102.3z
+                            		 M111.6,90.1c2.9,1.4,2.7,4.7,3.9,6.7c0,1.3-0.2,2.6-1.1,2.3c-3.4-1.3-3.3-4.6-4-7.5C110.1,90.7,110.6,89.6,111.6,90.1z
+                            		 M114.9,79.5c3.3-4.3,11.4-5.6,14.9-2.8c0.8,0.7,1.5,1.4,1.3,2.5c-0.3,1.5-1.5,1.7-2.7,1.5c-2.6-0.3-5.6,0.6-7.7-1.2
+                            		C118.8,77.9,117.3,79.5,114.9,79.5z"/>
+                            </g>
+                        </svg>
+                    </div>
                     <br>
                     <h2>WHO</h2>
                     <p class="about_info">
@@ -39,11 +85,25 @@
                         <br>
                         Web-UI
                         <br>
-                        Designer
+                        Developer
                     </p>
                 </article>
                 <article class="about_where">
-                    <img class="about_img" src="img/where.png" alt="Lviv opera theatre vector image">
+                    <img hidden class="about_img" src="img/where.png" alt="Lviv opera theatre vector image">
+                    <div class="svg_img">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 200 200">
+                          <style>
+                            .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+                          </style>
+                          <path d="M78 74.7V74H64v.7c0 .4.2.3 0 1.3h14.8c-.3-1-.8-.9-.8-1.3zm19 8.9c-.3.6-.7 1.4-1.2 1.4h2.4c-.5 0-.9-.8-1.2-1.4zm-20.8-1.8c0 .5.4.9.7.9.3 0 .7-.4.7-.9s-.3-.9-.7-.9c-.4-.1-.7.3-.7.9zM74.9 85c-.5 0-.9-.8-1.2-1.4-.3.6-.7 1.4-1.2 1.4h2.4zm23-6.3H96c.4.3.7.7.9 1.2.3-.5.6-.9 1-1.2zm-6.4.3H79.1c.9 0 1.4 1.6 1.4 2.9 0 .5-.1.9-.2 1.2.4-.6 1.1-1.1 1.6-1.1h7.3c.5 0 .9.5 1.1.8-.1-.4-.2-.5-.2-.9 0-1.2.6-2.9 1.4-2.9zm1.6 2.8c0 .5.3.9.7.9.3 0 .7-.4.7-.9s-.4-.9-.7-.9c-.3-.1-.7.3-.7.9zm6.4 0c0 .5.3.9.7.9.3 0 .7-.4.7-.9s-.4-.9-.7-.9c-.4-.1-.7.3-.7.9zm-24.9-3.1h-1.9c.4.3.7.7 1 1.2.2-.5.5-.9.9-1.2zM80 85v-1c0-.2 0-.3.1-.5-.3.5-.7 1-1.3 1.5H80zm11.8.1c-.5-.3-.9-.8-1.1-1.3v1.3h1.1zM98 74.7V74H84v.7c0 .4-.6.3-.8 1.3H98c-.3-1 0-.9 0-1.3zm1.5-49.6s-.1 0 0 0zm1.4 16.4c.1-.3.3-.5.6-.7 1.3-1.8 3.2-6.5 3-7.6-.5-1-2.9-3.2-4.7-5.2H99c-.2 1-.6 1.4-1 3.4-.6 3.1.3 8.4.8 10.7.7-.1 1.5-.2 2.1-.6zm-6.3-9.2c.1.1.2.1.2.2v-.4l-.2.2zm6 16.5L107 52v-4.2c-1-.1-2.2.2-3.4.2h-7.4c-1 0-2.2-.4-3.2-.3v4.1l6.1-3c.5-.2 1-.2 1.5 0zM90 48.2c-4 1-9 3.3-12 6.4v4.8l12-6.1v-5.1zM64.1 82.7c.3 0 .7-.4.7-.9s-.3-.9-.7-.9c-.3 0-.7.4-.7.9s.4.9.7.9zm4.1-4h-1.9c.4.3.7.7 1 1.2.2-.5.5-.9.9-1.2zm.3 6.3c-.5 0-.9-.8-1.2-1.4-.3.6-.7 1.4-1.3 1.4h2.5zm1.3-3.2c0 .5.4.9.7.9.3 0 .7-.4.7-.9s-.3-.9-.7-.9c-.4-.1-.7.3-.7.9zm52.2-27c-3-3.1-7-5.4-12-6.5v5.2l12 6.1v-4.8zm3 3.2v3.1l2.8 1.4c-.8-1.6-1.8-3.1-2.8-4.5zM43.5 35.4c.2.4.2.9-.1 1.3 0 .1-.1.1-.1.2.4.1.8.2 1.2.5-.3-.7-.6-1.5-.9-2.1-.1 0-.1 0-.1.1zm97.4 40.1l-.1.1h.1v-.1zm-1.6 6.4c0 1.4-.7 2.1-1.7 3.1h3.4v-6h-3.2c.9 0 1.5 1.6 1.5 2.9zm-5.7 3.1c-.5 0-.9-.8-1.2-1.4-.3.6-.7 1.4-1.2 1.4h2.4zm2.4-10.3V74h-14v.7c0 .4-.2.3-.4 1.3h14.7c-.2-1-.3-.9-.3-1.3zm-1.1 7.1c0 .5.3.9.7.9.3 0 .7-.4.7-.9s-.4-.9-.7-.9c-.3-.1-.7.3-.7.9zM144 87h15v1h-15zM75 57.8c-1 1.4-2.1 2.9-3 4.6l3-1.5v-3.1zM52.3 36.7c0-.1-.1-.1-.1-.2 0 .2-.1.3-.1.5.1 0 .2-.1.4-.1l-.2-.2zm100.6 13.5c-1.1-2.8-.9-3.4-.8-3.7.2-.7.3-1.7.3-2-.3-.6-.5-1.9-.7-3.8v-.2c-.2-.1-.5-.2-.7-.4-.1 0-.1 0-.2.1v.4c.1 1.5.1 2.7-.5 3.4v.1l.1.2c.3 1 .1 2.1-.6 3.8-.1.3-.2 2-.2 2h2.2l1.1.1zM159 74h-15v2.7c0 .1.1.3.1.4 0 .1-.1.3-.1.4V84h15V74zm-13-17h10v11h-10zm-46.1-2l-26 13h51.8zm6 26.8c0 .5.3.9.7.9.3 0 .7-.4.7-.9s-.3-.9-.7-.9c-.4-.1-.7.3-.7.9zm-1.3 3.2c-.5 0-.9-.8-1.2-1.4-.3.6-.7 1.4-1.2 1.4h2.4zM117 74.7V74h-14v.7c0 .4-.4.3-.6 1.3h14.8c-.3-1-.2-.9-.2-1.3zm-12.7 4h-1.9c.4.3.7.7 1 1.2.2-.5.5-.9.9-1.2zm15.9 5.7v.7h.7c-.3-.2-.5-.4-.7-.7zm6.8-5.7h-1.9c.4.3.7.7.9 1.2.3-.5.6-.9 1-1.2zm1.6 3.1c0 .5.3.9.7.9.3 0 .7-.4.7-.9s-.4-.9-.7-.9c-.4-.1-.7.3-.7.9zm-8-2.8h-11.9c.9 0 1.4 1.6 1.4 2.9 0 1.4-.7 2.1-1.7 3.1h1.5v-1c0-.8.6-2 1.4-2h7.3c.2 0 .4.4.6.4 0-.3-.1-.2-.1-.5.1-1.2.7-2.9 1.5-2.9zm6.6 6c-.5 0-.9-.8-1.2-1.4-.3.6-.7 1.4-1.2 1.4h2.4zm-5-3.2c0 .5.4.9.7.9s.7-.4.7-.9-.3-.9-.7-.9-.7.3-.7.9zm11.2-3.1h-1.9c.4.3.7.7 1 1.2.2-.5.5-.9.9-1.2zM45 129.6V144h6v-14.4c0-1.8-1.2-3.3-3-3.3-1.9-.1-3 1.4-3 3.3zM65 168h2v4h-2zm25-1.5c0-.8.7-1.5 1.5-1.5H90v1.5zM77 168h1v4h-1zm5-1.5V165h-1.5c.8 0 1.5.7 1.5 1.5zm-20 0c0-.8.7-1.5 1.5-1.5H62v1.5zm8 0V165h-1.5c.8 0 1.5.7 1.5 1.5zM38 99h21v1H38z" class="st0"/>
+                          <path d="M54 127.1v-24H42v24.1c1-2.3 3.4-3.9 6-3.9 2.6-.1 5 1.5 6 3.8zM38 103h1v48h-1zm24 44h-5v4h5v-4zm-5-44h2v41h-2zm83 0h2v41h-2zm-8 65h2v4h-2zm-3-1.5c0-.8.7-1.5 1.5-1.5H129v1.5zm8 0V165h-1.5c.8 0 1.5.7 1.5 1.5zM93 168h2v4h-2zm-66-11h145v5H27z" class="st0"/>
+                          <path d="M100 0C44.8 0 0 44.8 0 100s44.8 100 100 100 100-44.8 100-100S155.2 0 100 0zM48 180.5v.2c-1-.7-2-1.3-3-2V170h-5v4.9c-1-.8-2-1.7-3-2.5v-3.9c0-.8.7-1.5 1.5-1.5h8c.8 0 1.5.7 1.5 1.5v12zm113-6.4c-.7.5-1.3 1.1-2 1.6V170h-6v9h1.6c-1.3.9-2.7 1.8-4 2.6-.3-.3-.5-.7-.5-1.1v-12c0-.8.7-1.5 1.5-1.5h8c.8 0 1.5.7 1.5 1.5v5.6zm16.3-17.1H175v2.9c-1.4 1.7-2.8 3.4-4.3 5.1H140v22.3c-1 .5-2 .9-3 1.3v-15.1c0 .8-.7 1.5-1.5 1.5h-5c-.8 0-1.5-.7-1.5-1.5v18l-3 .9v-18.9c0 .8-.7 1.5-1.5 1.5h-5c-.8 0-1.5-.7-1.5-1.5v-7c0-.8.7-1.5 1.5-1.5H117v29.5c-1 .2-2 .3-3 .5v-30h-1v30.1l-2.9.3c0-.1-.1-.3-.1-.4v-21.5c0 .8-.7 1.5-1.5 1.5h-5c-.8 0-1.5-.7-1.5-1.5v-7c0-.8.7-1.5 1.5-1.5H101v30c0 .4-.1.7-.3 1-.3.3-.7.5-1.2.5s-.9-.2-1.2-.6c-.2-.2-.3-.6-.3-.9v-21.5c0 .8-.7 1.5-1.5 1.5h-5c-.8 0-1.5-.7-1.5-1.5V195c0 .2 0 .3-.1.4-1-.1-2-.2-2.9-.3V165h-2v29.8c-1-.2-2-.3-3-.5v-20.8c0 .8-.7 1.5-1.5 1.5h-5c-.8 0-1.5-.7-1.5-1.5v-7c0-.8.7-1.5 1.5-1.5H73v27.1l-3-.9v-17.7c0 .8-.7 1.5-1.5 1.5h-5c-.8 0-1.5-.7-1.5-1.5v14.7c-1-.4-2-.9-3-1.3V165H29.4c-1.9-2-3.7-4.2-5.4-6.4V157h-1.2l-2.1-3c-.7-1-1.3-2-2-3H35V94.1l-1.6-3.7c-.2-.5-.3-1.1-.1-1.5.3-.4.7-.9 1.2-.9H38V72.3c0-.8 1-1.4 1-1.5v-1.4c0-.7 1-1.2 1-1.4V57.3c0-.1-1-.7-1-1.5v-1.7c0-.8.7-1.1 1.5-1.1h3.1c-.1-1-.2-1.1 0-1.5.8-1.3 1.4-3 1.4-3.4v-1.4l-2.6-2.4c-.2-.1-.2-.3-.3-.5l-.1-.3c-.3-.6-.1-1.4.4-1.8l1.6-1.3c-.4-.4-.9-.7-1.3-.7-2-.3-3.2-2.1-3.5-3.2-.2-.6-.1-1.1.2-1.5l-.2-.2c-.5-.5-.5-1.3-.1-1.9v-.1l-.6-.7c-.4-.5-.4-1.1-.2-1.6l.1-.3c.3-.6 1-1 1.7-.8 1.3.3 4.4 1.3 5.8 3.8.6 1.2 1.2 2.5 1.6 3.8h.7c.3 0 .6 0 .8.1.2-1.2.6-2.4 1.2-3.5 1.5-2.6 4.3-3.8 5.3-4 .7-.2 1.4.2 1.7.8l.1.3c.3.5.2 1.1-.1 1.6l-.5.7v.1c.4.6.4 1.4-.1 1.9l-.2.2c.3.4.4 1 .2 1.5-.3 1.1-1.6 2.8-3.5 3.2-.3 0-.5.6-.6.9.2.4 1.1 1.5 1.9 2.2 0 0 .1.1.3.1.7.3 2.2 1.2 1.9 2.9-.1.8-1.2 1.8-1.8 2-.6.3-1.2.3-1.7 0-.4-.2-.9-.8-1.1-1.4v.9c0 .4.4 2.7.8 4.4.1.3 0 .2-.1 1.2h3.6c.8 0 1.8.3 1.8 1.1v1.7c0 .8-1 1.4-2 1.5V68c1 .2 1 .8 1 1.4v.3l10.7-5.2c4-11.1 14.4-18.8 26-19.8-.3-.6-.2-1.4-.2-1.8.1-.4-.1-.9-.3-1.4-.2-.8-.5-1.6-.2-2.5.3-.9 1.3-2.2 1.8-2.9v-.2c-1.3-.2-2.7-1.7-2.9-2.1-.3-.3-1-1.2-.6-2.2.2-.6.7-1 1.3-1.5.3-.2.9-.7 1-.9.1-.4.3-.8.5-1.2.2-.4.5-1.2.7-1.8-1.5-.7-4.4-2.3-5-3-.1-.1-.2-.3-.3-.4-.8-.3-1.4-1.1-1.5-2-.2-1.1.2-2.1 1.2-2.5.5-.2 1.1-.2 1.7 0 .6.3 1.1.8 1.4 1.7.4.5 1.8 1.4 2.2 1.5.5.1 1.4.3 2.2.7 0-.5 0-.8.3-1.3.5-.9 1.1-1.8 2.5-1.8h.3c1.5 0 2.2 1.3 2.5 1.9.2.4.2.7.2 1.1.7-.3 1.5-.5 2.3-.6.4-.1 1.7-1 2.2-1.4.2-.5.5-1.3 1.3-1.7.5-.3 1.2-.3 1.8 0 .9.4 1.4 1.4 1.2 2.5-.2.8-.7 1.7-1.5 2-.1.1-.2.3-.3.5-.4.5-1.3 1.1-5.2 3.1.4.4 1.6 2.1 1.6 3.7.7.8 1.4 1.7 1.7 2.3.6 1.2.2 3.4-1.1 6.6-.4 1-1.2 2.8-2.2 4.2v1.8c1 0 2.9.1 4.4.4h.1c.2 0 .3 0 .5.1 5.7 1 10.9 3.7 15 7.5.4.1.7.4.9.8 3.1 3.1 5.5 6.9 7.1 11.2l10 5.1v-.3c0-.7 1-1.2 1-1.4V57h.2c-.8 0-1.2-.4-1.2-1.2v-1.7c0-.8.3-1.1 1.2-1.1h3.6c-.1-1-.2-.9-.1-1.2v-1c.1-1.7.1-3 .4-3.7.6-1.5.5-1.9.5-1.9l-.1-.2c-.2-.6-.5-1.6.1-2.5l-.5.5-.1.1c-.8.8-2 .5-2.5.1-.7-.4-1-1.2-.8-2 .2-.8.8-1.3 1.5-1.5.3-.2 1.2-.9 1.8-1.4-.1-.3-.2-.5-.4-.5-1.9-.3-3.1-2-3.4-3-.1-.6 0-1 .2-1.4l-.1-.1c-.5-.5-.5-1.3-.1-1.9l-.5-.6c-.4-.5-.4-1.1-.1-1.6l.1-.2c.3-.6 1-.9 1.6-.7 1.3.3 3.7 1.6 4.9 3.7.4.7.6 1.4.8 2.2h.1c.7.1 1.3.3 1.7.4.2-.9.5-1.8.9-2.6 1.2-2.2 3.7-3.4 4.9-3.7.7-.2 1.4.1 1.7.7l.1.2c.3.5.3 1.2-.1 1.7l-.5.6c.4.6.3 1.3-.1 1.9l-.1.1c.2.4.3.9.2 1.4-.2 1-1.3 2.5-3 2.9.9.3 1.9.9 2.2 1.9.2.7.3 1.5-.2 2.5-.3.5-.8.8-1.3.9-.9.1-1.5-.6-1.8-1l-.1-.1c.1.6.2 1.2.2 1.3.6 1.1.1 3.4-.1 4.1.1.6.8 2.5 1.6 4.2.2.4.2.5 0 1.5h2.2c.8 0 1.2.3 1.2 1.1v1.7c0 .7 0 1.2-1 1.4V68c1 .2 1 .8 1 1.4v1.4c1 .1 2 .7 2 1.5V88h2.3c.5 0 .8.5 1.1.9.3.4.2 1.2.1 1.6L164 94v57h17.4c-.6 1-1.3 2-2 3l-2.1 3z" class="st0"/>
+                          <path d="M105 168h1v4h-1zm21-1.5V165h-1.5c.8 0 1.5.7 1.5 1.5zm-28 0V165h-1.5c.8 0 1.5.7 1.5 1.5zm23 1.5h1v4h-1zm-11-1.5V165h-1.5c.8 0 1.5.7 1.5 1.5zm32-19.5h-5v4h5v-4zm-2-48h21v1h-21zm20 4h1v48h-1zm-12 26.6V144h6v-14.4c0-1.8-1.2-3.3-3-3.3s-3 1.4-3 3.3z" class="st0"/>
+                          <path d="M157 127.1V103h-12v24c1-2.2 3.4-3.7 6-3.7 2.6-.1 5 1.5 6 3.8zm-20-12.2V103h-20v41h1v-29.1c0-5.3 4.2-9.7 9.5-9.7s9.5 4.4 9.5 9.7zM161.9 92l.3-1H36.7l.3 1zm-113-44.6c0-.6-.1-3.5-.1-4.5 0-.2 0-.3.1-.5-.2-.1-.5-.3-.7-.3h-.1l-.1-.3v6.3c0 .6-.2 1.5-.5 2.3h1.9c-.3-1.2-.5-2.5-.5-3zm10.2 27.3v-.9h-.5v1.9h.8c-.1-.3-.3-.6-.3-1zM56 87.5c0-.1-.5-.5-.5-.5H41v1h15v-.5zM43 57h10v11H43zm-2 17h15v10H41zm52 40.9V144h13v-29.1c0-3.7-2.8-6.7-6.5-6.7s-6.5 3-6.5 6.7zM85 103h1v41h-1zm28 0h1v41h-1zm5 44h-9v4h9v-4zM62 99h75v1H62zm28 48h-9v4h9v-4z" class="st0"/>
+                          <path d="M121 114.9V144h13v-29.1c0-3.7-2.8-6.7-6.5-6.7s-6.5 3-6.5 6.7zm-12 0V144h1v-41H89v41h1v-29.1c0-5.3 4.2-9.7 9.5-9.7s9.5 4.4 9.5 9.7zM61.8 79H59v6h3.1c-1-1-1.7-1.7-1.7-3.1 0-1.3.6-2.9 1.4-2.9zM81 114.9V144h1v-41H62v11.9c0-5.3 4.2-9.7 9.5-9.7s9.5 4.4 9.5 9.7z" class="st0"/>
+                          <path d="M65 114.9V144h13v-29.1c0-3.7-2.8-6.7-6.5-6.7s-6.5 3-6.5 6.7z" class="st0"/>
+                        </svg>    
+                    </div>
                     <br>
                     <h2>WHERE</h2>
                     <p class="about_info">
@@ -53,7 +113,20 @@
                     </p>
                 </article>
                 <article class="about_what">
-                    <img class="about_img" src="img/what.png" alt="WEB-page vector image">
+                    <img hidden class="about_img" src="img/what.png" alt="WEB-page vector image">
+                    <div class="svg_img">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 200 200">
+                          <style>
+                            .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+                          </style>
+                          <path d="M167 63H35v11h132V63zM41.1 70.6c-1.2 0-2.2-1-2.2-2.2 0-1.2 1-2.2 2.2-2.2 1.2 0 2.2 1 2.2 2.2 0 1.3-1 2.2-2.2 2.2zm8.5 0c-1.2 0-2.2-1-2.2-2.2 0-1.2 1-2.2 2.2-2.2 1.2 0 2.2 1 2.2 2.2 0 1.3-1 2.2-2.2 2.2zm8.6 0c-1.2 0-2.2-1-2.2-2.2 0-1.2 1-2.2 2.2-2.2 1.2 0 2.2 1 2.2 2.2 0 1.3-1 2.2-2.2 2.2zm18.6 47.5c.6.9 1.2 1.9 1.9 2.8l5-4.8 3.7 4.5 1.9-3.9c-1.9-2-3.8-4.5-5.2-6.3-1.7 2.2-4.5 5.6-7.3 7.7z" class="st0"/>
+                          <path d="M54 126.7c4-5.7 8.3-16.1 11.2-23l1.5-3.5 1.7 3.4c.1.1 2.6 5.2 6.5 11.5 3-2.3 6.5-6.8 7.8-8.7l1.4-2 1.4 1.9c2.3 3.1 5.1 6.6 7.1 8.6h.4V93H54v33.7zm34.2.4l-4.8-5.8-2.5 2.5c3.7 5.1 8.1 9.8 12.1 12.2v-16.2c-1-.2-.6-.3-.9-.5l-3.9 7.8z" class="st0"/>
+                          <path d="M75.4 122.1l-3.1 7.6-3.8-4.7-4.2 7.9-4-10.1c-2.3 4.2-4.3 8.1-6.3 10v7.2h39c-6-2.9-12.6-10.5-17.6-17.9z" class="st0"/>
+                          <path d="M67.9 118.5l3.3 4.2 1.7-4.2c-2.5-3.9-4.5-7.6-5.9-10-1.2 2.6-2.8 6.3-4.7 10.1h.1l2.3 5.9 3.2-6z" class="st0"/>
+                          <path d="M51 89h45v51h71V78H35v62h16V89zm101 33h-20v-3h20v3zm-30-7v-4h16v4h-16zm28 0h-8v-4h8v4zm-1-8h-23v-4h23v4zm-15-15h13v5h-13v-5zm-28 0h24v5h-24v-5zm0 11h16v4h-16v-4zm0 8h12v4h-12v-4zm0 8h22v3h-22v-3z" class="st0"/>
+                          <path d="M100 0C44.8 0 0 44.8 0 100s44.8 100 100 100 100-44.8 100-100S155.2 0 100 0zm70 143H31V59h139v84z" class="st0"/>
+                        </svg>
+                    </div>
                     <br>
                     <h2>WHAT</h2>
                     <p class="about_info">
@@ -63,8 +136,9 @@
                     </p>
                 </article>
             </article>
+            <div id="skills"></div>
             <article class="skills">
-                <h1 id="skills">SKILLS</h1>
+                <h1>SKILLS</h1>
                 <div class="sk1"></div>
                 <div class="sk1shadow"></div>
                 <div class="sk1crcl"></div>
@@ -80,81 +154,92 @@
                 <!-- transition Here should br animated skills, when you scroll down from about it fluenntly apears and, when cursor is over some scale apears it's name--> 
             </article>
             <article class="grey">
-            <article class="work">
-                <h1 id="works">WORKS</h1>
+                <div id="works"></div>
                 <article>
-                    <a>    
-                        <img class="work_img" src="img/work1.png" alt="My work #1">
-                        <img class="link" src="img/workhover.png" alt="hidden image when cursor is over work1">
-                        <span  class="link">work01</span>
-                    </a>
+                    <h1>WORKS</h1>
+                    <article class="work">
+                        <a>    
+                            <img class="work_img" src="img/work1.png" alt="My work #1">
+                            <img class="link" src="img/workhover.png" alt="hidden image when cursor is over work1">
+                            <span  class="link">work01</span>
+                        </a>
+                    </article>
+                        <article class="work">
+                        <a>    
+                            <img class="work_img" src="img/work2.png" alt="My work #2">
+                            <img class="link" src="img/workhover.png" alt="hidden image when cursor is over work2">
+                            <span  class="link">work02</span>
+                        </a>
+                    </article>
+                        <article class="work">
+                        <a>    
+                            <img class="work_img" src="img/work3.png" alt="My work #3">
+                            <img class="link" src="img/workhover.png" alt="hidden image when cursor is over work3">
+                            <span  class="link">work03</span>
+                        </a>
+                    </article>
+                        <article class="work">
+                        <a>    
+                            <img class="work_img" src="img/work4.png" alt="My work #4">
+                            <img class="link" src="img/workhover.png" alt=" hidden image when cursor is over work4">
+                            <span  class="link">work04</span>
+                        </a>
+                    </article>
+                        <article class="work">
+                        <a>    
+                            <img class="work_img" src="img/work5.png" alt="My work #5">
+                            <img class="link" src="img/workhover.png" alt=" hidden image when cursor is over work5">
+                            <span  class="link">work05</span>
+                        </a>
+                    </article>
+                        <article class="work">
+                        <a>    
+                            <img class="work_img" src="img/work6.png" alt="My work #6">
+                            <img class="link" src="img/workhover.png" alt=" hidden image when cursor is over work6">
+                            <span  class="link">work06</span>
+                        </a>
+                    </article>
                 </article>
-                    <article>
-                    <a>    
-                        <img class="work_img" src="img/work2.png" alt="My work #2">
-                        <img class="link" src="img/workhover.png" alt="hidden image when cursor is over work2">
-                        <span  class="link">work02</span>
-                    </a>
+                <div class="clr"></div>
+                <div  id="testimonials"></div>
+                <article class="testimonials">
+                    <h1>TESTIMONIALS</h1>
+                    <article class="testimonail">
+                        <p>
+                            <em>Insanity: doing the same thing over and over again and expecting different results.</em>
+                        </p>
+                        <p class="caption">Albert Einstein</p>
+                    </article>
                 </article>
-                    <article>
-                    <a>    
-                        <img class="work_img" src="img/work3.png" alt="My work #3">
-                        <img class="link" src="img/workhover.png" alt="hidden image when cursor is over work3">
-                        <span  class="link">work03</span>
-                    </a>
-                </article>
-                    <article>
-                    <a>    
-                        <img class="work_img" src="img/work4.png" alt="My work #4">
-                        <img class="link" src="img/workhover.png" alt=" hidden image when cursor is over work4">
-                        <span  class="link">work04</span>
-                    </a>
-                </article>
-                    <article>
-                    <a>    
-                        <img class="work_img" src="img/work5.png" alt="My work #5">
-                        <img class="link" src="img/workhover.png" alt=" hidden image when cursor is over work5">
-                        <span  class="link">work05</span>
-                    </a>
-                </article>
-                    <article>
-                    <a>    
-                        <img class="work_img" src="img/work6.png" alt="My work #6">
-                        <img class="link" src="img/workhover.png" alt=" hidden image when cursor is over work6">
-                        <span  class="link">work06</span>
-                    </a>
-                </article>
-            </article>
-            <article class="testimonials">
-                <h1 id="testimonials">TESTIMONIALS</h1>
-                <article class="testimonail">
-                    <p>
-                        <em>Insanity: doing the same thing over and over again and expecting different results.</em>
-                    </p>
-                    <p class="caption">Albert Einstein</p>
-                </article>
-            </article>
             </article>
             <article class="thanks">
                 <h1>Thank you for your visit, Feel free to say hello.</h1>
             </article>
+            <div  id="contact"></div>
             <article class="contacts">
-                <h1 id="contact">CONTACT ME</h1>
+                <h1 class="cntme">CONTACT ME</h1>
                 <article class="form">
-                    <form method="get" action="">
-                        <label for="name">NAME:</label>
-                        <br>
-                        <input id="name" type="text" name="NAME" required/>
-                        <label for="phone">PHONE:</label>
-                        <br>
-                        <input id="phone" type="text" name="PHONE" required/><!--How to determine from what country user is (IP) and prupose him his country phone code-->
-                        <label for="email">EMAIL:</label>
-                        <br>
-                        <input id="email" type="email" name="EMAIL" required/>
-                        <label for="message">MESSAGE:</label>
-                        <br>
-                        <textarea id="message" rows="5" name="message"></textarea>
-                        <br>
+                    <form method="POST" action="https://formspree.io/taras.pashko@gmail.com">
+                        <div id="name">
+                            <label for="name">NAME:</label>
+                            <br>
+                            <input type="text" name="name" required/>
+                        </div>
+                        <div  id="phone">
+                            <label for="phone">PHONE:</label>
+                            <br>
+                            <input type="text" name="phone" required/><!--How to determine from what country user is (IP) and prupose him his country phone code-->
+                        </div>
+                        <div  id="email">
+                            <label for="email">EMAIL:</label>
+                            <br>
+                            <input id="email" type="email" name="_replyto" required/>
+                        </div>
+                        <div id="message">
+                            <label for="message">MESSAGE:</label>
+                            <br>
+                            <textarea rows="5" name="message"></textarea>
+                        </div>
                         <label for="send"><!--How is right to make the send button as i want to?-->
                         <input id="send" type="submit" value="SEND">
                         </label>
@@ -176,5 +261,7 @@
             </article>
             <small>Taras Pashko © 2016</small>
         </footer>
+        <script type="text/javascript" src="jquery-2.2.3.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
