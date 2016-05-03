@@ -68,9 +68,7 @@ a:active {
 a {
     margin: 35px;
     padding-bottom: 64px;
-}
-.link {
-    display: none;
+    text-decoration: none;
 }
 .about {
     height: 400px;
@@ -193,7 +191,44 @@ a {
     float: left;
     width: 50%;
     margin-bottom: 60px;
+    position: relative;
+    text-decoration: none;
 }
+.work_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+.work:hover .work_img {
+    opacity: 0;
+}
+.link {
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+}
+#h1works{
+    margin-bottom: 100px;
+}
+  /*
+.content:hover{
+  -moz-transition: bottom 0.4s;
+    -o-transition: bottom 0.4s;
+    -webkit-transition: bottom 0.4s;
+    transition: bottom 0.4s;
+    position: relative;
+    top: 0;
+    bottom: -150%;
+    right: 0;
+    left: 0;
+    width: 80%;
+    height: 20px;
+    margin: auto;
+    
+    text-align: center;
+    color: #fff;
+}*/
 .clr {
     clear: both;
 }
