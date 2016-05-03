@@ -225,24 +225,32 @@
                             <br>
                             <input type="text" name="name" required/>
                         </div>
-                        <div  id="phone">
+                        <div id="phone">
                             <label for="phone">PHONE:</label>
                             <br>
-                            <input type="text" name="phone" required/><!--How to determine from what country user is (IP) and prupose him his country phone code-->
+                            <input type="text" name="phone" required/>
                         </div>
-                        <div  id="email">
+                        <div id="email">
                             <label for="email">EMAIL:</label>
                             <br>
-                            <input id="email" type="email" name="_replyto" required/>
+                            <input type="email" name="_replyto" required/>
                         </div>
+                        <div hidden id="subject">
+                            <label for="subject">SUBJECT:</label>
+                            <br>
+                            <input type="text" name="subject"/>
+                        </div>
+                        <div class="clr"></div>
                         <div id="message">
                             <label for="message">MESSAGE:</label>
                             <br>
                             <textarea rows="5" name="message"></textarea>
                         </div>
-                        <label for="send"><!--How is right to make the send button as i want to?-->
-                        <input id="send" type="submit" value="SEND">
-                        </label>
+                        <div class="butn">    
+                            <label for="send"><!--How is right to make the send button as i want to?-->
+                            <input id="send" type="submit" value="SEND">
+                            </label>
+                        </div>
                     </form>
                 </article>
             </article>
