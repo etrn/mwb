@@ -194,10 +194,11 @@ a {
     height: 0;
     width: 0;
     border-top: 130px solid transparent;
-    border-left: 1495px solid #99a4a0;
+    border-left: 1200px solid #99a4a0;
     position: relative;
-    top: 35px;
+    top: 20px;
     z-index: -1;
+    max-width: 100%;
 }
 .work {
     float: left;
@@ -262,9 +263,10 @@ a {
     height: 0;
     width: 0;
     border-bottom: 100px solid transparent;
-    border-left: 1495px solid #99a4a0;
+    border-left: 1200px solid #99a4a0;
     position: relative;
     z-index: -1;
+    max-width: 100%;
 }
 .thanks {
     margin-top: 150px;
