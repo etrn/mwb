@@ -250,3 +250,20 @@ footer {
 .work {
     height: 100%;
 }
+.about {
+    height: 400px;
+}
+.about_who {
+    width: 100%;
+}
+.about_where {
+    width: 100%;
+}
+.about_what {
+    width: 100%;
+}
+.svg_img {
+    width: 60.60%;
+    margin-left: auto;
+    margin-right: auto;
+}

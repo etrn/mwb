@@ -44,6 +44,26 @@ a:link, a:visited {
 a:active {
     color: #99a4a0;
 }
+.about {
+    height: 400px;
+}
+.about_who {
+    float: left;
+    width: 33%;
+}
+.about_where {
+    float: left;
+    width: 33%;
+}
+.about_what {
+    float: left;
+    width: 33%;
+}
+.svg_img {
+    width: 60.60%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .grey {
     background-color: #99a4a0;
 }
