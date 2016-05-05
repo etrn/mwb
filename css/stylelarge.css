@@ -33,10 +33,10 @@ nav {
     z-index: 101;
 }
 .lg {
-    margin-right: 25px;
+    margin-right: 2.083%;
 }
 .lgt {
-    margin-left: 130px;
+    margin-left: 10.833%;
 }
 main {
     margin-top: 200px;
@@ -75,9 +75,6 @@ a {
     margin: 35px;
     text-decoration: none;
     padding-bottom: 35px;
-}
-nav > a {
-    margin-bottom: 35px;
 }
 .about {
     height: 400px;
@@ -270,7 +267,7 @@ nav > a {
     opacity: 0;
     transition: all 0.4s ease-in-out;
     transform: scale(0);
-    backface-visibility: hidden;
+   /* backface-visibility: hidden;*/
 }
 .workinfo h3 {
     color: #fff;
