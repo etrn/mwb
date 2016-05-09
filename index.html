@@ -6,21 +6,29 @@
         <title>Taras Pashko personal web-page</title>
         <link rel="icon" href="img/favicon-128.png" sizes="16x16 32x32 64x64 128x128" type="image/png">
         <link href="css/normalize.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" media="(min-width: 300px) and (max-width: 640px)" href="css/stylemob.css">
-        <link rel="stylesheet" media="(min-width: 641px) and (max-width: 959px)" href="css/stylemed.css">
+        <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
+        <link rel="stylesheet" media="(min-width: 300px) and (max-width: 768px)" href="css/stylemob.css">
+        <link rel="stylesheet" media="(min-width: 769px) and (max-width: 959px)" href="css/stylemed.css">
         <link rel="stylesheet" media="(min-width: 960px)" href="css/stylelarge.css">
     </head>
     <body>
         <header>
             <div id="aboutme"></div>
             <nav>
-                <img class="lgt" src="img/logotriangle.png" alt="Triangle Taras Pashko Logo">
-                <img class="lg"src="img/logo.png" alt="Taras Pashko Name Logo">
-                <a href="#aboutme">ABOUT ME</a>
-                <a href="#skills">SKILLS</a>
-                <a href="#works">WORKS</a>
-                <a href="#testimonials">TESTIMONIALS</a>
-                <a href="#contact">CONTACT</a>
+                <div id="menu">
+                    <div id="lg">
+                        <img id="lgt" src="img/logobackground.png" alt="logo"></img>
+                    </div>
+                    <div class="menulink">
+                        <ul>
+                          <li><a href="#aboutme">ABOUT</a></li>
+                          <li><a href="#skills">SKILLS</a></li>
+                          <li><a href="#works">WORKS</a></li>
+                          <li><a href="#testimonials">TESTIMONIALS</a></li>
+                          <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
             <img id="logo" src="img/logo.png" alt="Taras Pashko Name Logo" width="165px" height="65px">
             <img id="logotriangle" src="img/logotriangle.png" alt="Triangle Taras Pashko Logo" width="120px">
@@ -135,22 +143,32 @@
                     </p>
                 </article>
             </article>
+            <div class="clr"></div>
             <div id="skills"></div>
-            <article class="skills">
+            <article>
                 <h1 id="h1skills">SKILLS</h1>
-                <div class="sk1"></div>
-                <div class="sk1shadow"></div>
-                <div class="sk1crcl"></div>
-                <div class="sk2"></div>
-                <div class="sk2shadow"></div>
-                <div class="sk2crcl"></div>
-                <div class="sk3"></div>
-                <div class="sk3shadow"></div>
-                <div class="sk3crcl"></div>
-                <div class="sk4"></div>
-                <div class="sk4shadow"></div>
-                <div class="sk4crcl"></div>
-                <!-- transition Here should br animated skills, when you scroll down from about it fluenntly apears and, when cursor is over some scale apears it's name--> 
+                    <div class="container">
+                        <div class="skills">
+                           <div class="skill">
+                              <div class="skill-title">
+                                 HTML
+                              </div>
+                              <div class="skill-bar" data-bar="90"><span></span></div>
+                           </div>
+                           <div class="skill">
+                              <div class="skill-title">
+                                 CSS
+                              </div>
+                              <div class="skill-bar" data-bar="80"><span></span></div>
+                           </div>
+                           <div class="skill">
+                              <div class="skill-title">
+                                 JAVASCRIPT
+                              </div>
+                              <div class="skill-bar" data-bar="40"><span></span></div>
+                           </div>
+                        </div>
+                    </div>
             </article>
             <div id="works"></div>
             <article class="grey">
@@ -212,16 +230,36 @@
                 <article class="testimonials">
                     <h1>TESTIMONIALS</h1>
                     <article class="testimonail">
-                        <p>
-                            <em>Insanity: doing the same thing over and over again and expecting different results.</em>
-                        </p>
-                        <p class="caption">Albert Einstein</p>
+                        <div class="main-gallery">
+                          <div class="gallery-cell">
+                            <div class="testimonial">
+                              <img class="testimonial-photo" src="https://lh3.googleusercontent.com/-aBTVsyIVYYc/AAAAAAAAAAI/AAAAAAAAArE/cGK_XZoEoeA/s120-c/photo.jpg">
+                              <q class="testimonial-quote">Insanity: doing the same thing over and over again and expecting different results.</q>
+                              <span class="testimonial-author">Albert Einstein</span>
+                            </div>
+                          </div>
+                          <div class="gallery-cell">
+                            <div class="testimonial">
+                              <img class="testimonial-photo" src="https://lh3.googleusercontent.com/-quhW9xdUiys/AAAAAAAAAAI/AAAAAAAAAjg/txherQy-_ns/s120-c/photo.jpg">
+                              <q class="testimonial-quote">The season of failure is the best time for sowing the seeds of success.</q>
+                              <span class="testimonial-author">Paramahansa Yogananda</span>
+                            </div>
+                          </div>
+                          <div class="gallery-cell">
+                            <div class="testimonial">
+                              <img class="testimonial-photo" src="https://lh3.googleusercontent.com/-jQI2BnOuW0M/AAAAAAAAAAI/AAAAAAAAAFA/Z0oZ_6N7uNA/s120-c/photo.jpg">
+                              <q class="testimonial-quote">The brain is like a muscle. When it is in use we feel very good. Understanding is joyous.</q>
+                              <span class="testimonial-author">Carl Sagan</span>
+                            </div>
+                          </div>
+                        </div>
                     </article>
                 </article>
             </article>
             <div id="triangledown"></div>
             <article class="thanks">
-                <h1>Thank you for your visit, Feel free to say hello.</h1>
+                <h1>Thank you for your visit.<br>
+                Feel free to say hello.</h1>
             </article>
             <div  id="contact"></div>
             <article class="contacts">
@@ -260,18 +298,19 @@
         </main>
         <footer>
             <article>
-                <a class="social" href="mailto:taras.pashko@gmail.com" target="_blank">
+                <a class="social1" href="mailto:taras.pashko@gmail.com" target="_blank">
                     <img src="img/mail.png" alt="Email me"> <!--How to realise creating-->
                 </a>
-                <a class="social" href="//www.facebook.com/1tS.Hh" target="_blank">
+                <a class="social2" href="//www.facebook.com/1tS.Hh" target="_blank">
                     <img src="img/fb.png" alt="Facebook me">
                 </a>
-                <a class="social" href="tel:+380938540565">
+                <a class="social3" href="tel:+380938540565">
                     <img src="img/call.png" alt="Call me"> <!--How  can I realise a call in mobile ver. and number apearing in web?--> 
                 </a>
             </article>
             <small>Taras Pashko © 2016</small>
         </footer>
+        <script type="text/javascript" src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
         <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
     </body>

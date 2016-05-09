@@ -8,6 +8,10 @@ body {
     color: #fff;
     font-family: 'segoeui', sans-serif;
 }
+html, body, main, article, footer, nav {
+    max-width: 1900px;
+    margin: 0 auto;
+}
 #menu_mob {
     display: none;
 }
@@ -27,23 +31,17 @@ body {
 nav {
     position: fixed;
     top:20px;
-    background: rgba(70, 154, 123, 0.8);
+    background: rgba(70, 154, 123, 1);
     border-radius: 30px;
     width: 100%;
     z-index: 101;
-}
-.lg {
-    margin-right: 2.9166%;
-}
-.lgt {
-    margin-left: 2.9166%;
 }
 main {
     margin-top: 200px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-}    
+} 
 article {    
     margin-left: auto;
     margin-right: auto;
@@ -61,10 +59,8 @@ p {
 }
 a:link, a:visited {
     color: #fff;
-    margin: 2.9166%;
+    margin: 1%;
     text-decoration: none;
-    display: inline-block;
-    vertical-align: middle;
 }
 a:active {
     color: #99a4a0;
@@ -359,3 +355,125 @@ footer {
     font-size: 10px;
     text-align: center;
 }
+ #menu {
+    width: 100%;
+    position: fixed;
+    float: right;
+    height: 100px;
+    max-width: 1900px;
+}
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    display: block;
+    zoom: 1;
+    float: right;
+    margin-right: 10%;
+}
+#menu ul:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+#menu ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+#menu.align-right ul li {
+    float: right;
+}
+#menu.align-center ul {
+    text-align: center;
+}
+#menu ul li a {
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    -webkit-transition: color .25s;
+    -moz-transition: color .25s;
+    -ms-transition: color .25s;
+    -o-transition: color .25s;
+    transition: color .25s;
+    float: left;
+    left: 25%;
+    top: -5px;
+}
+#menu ul li a:hover {
+    color: #99a4a0;
+}
+#menu ul li a:hover:before {
+    width: 100%;
+}
+#menu ul li a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #99a4a0;
+    -webkit-transition: width .25s;
+    -moz-transition: width .25s;
+    -ms-transition: width .25s;
+    -o-transition: width .25s;
+    transition: width .25s;
+}
+#menu ul li.last > a:after,
+#menu ul li:last-child > a:after {
+    display: none;
+}
+#menu ul li.active a {
+    color: #99a4a0;
+}
+#menu ul li.active a:before {
+    width: 100%;
+}
+#menu.align-right li.last > a:after,
+#menu.align-right li:last-child > a:after {
+    display: block;
+}
+#menu.align-right li:first-child a:after {
+    display: none;
+}
+.menulink {
+    margin-bottom: 61px;
+    margin-top: 41px;
+}
+#lg {
+    float: left;
+    width: calc(100% - 760px);
+    max-width: 320px;
+}
+  #menu ul li {
+    float: none;
+    display: block;
+  }
+  #menu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #99a4a0;
+  }
+  #menu ul li.last > a,
+  #menu ul li:last-child > a {
+    border: 0;
+  }
+  #menu ul li a:after {
+    display: none;
+  }
+  #menu ul li a:before {
+    display: none;
+  }

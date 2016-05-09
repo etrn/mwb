@@ -70,6 +70,7 @@ main {
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 32px;
+    width: 100%;
 }
 .form {
     font-size: 40px;
@@ -112,94 +113,7 @@ footer {
     margin-top: 200px;
     margin-bottom: 320px;
 }
-.sk1 {
-    max-width: 560px;
-    height: 10px;
-    background-color: #fff;
-    margin-left: 40px;
-    margin-right: 40px;
-    position: relative;
-}
-.sk2 {
-    max-width: 560px;
-    height: 10px;
-    background-color: #fff;
-    margin-left: 40px;
-    margin-right: 40px;
-    position: relative;
-}
-.sk3 {
-    max-width: 560px;
-    height: 10px;
-    background-color: #fff;
-    margin-left: 40px;
-    margin-right: 40px;
-    position: relative;
-}
-.sk4 {
-    max-width: 560px;
-    height: 10px;
-    background-color: #fff;
-    margin-left: 40px;
-    margin-right: 40px;
-    position: relative;
-}
-.sk1shadow {
-    max-width: 560px;
-    height: 10px;
-    background-color: #78c3a8;
-    margin-left: 40px;
-    margin-right: 40px;
-    position: relative;
-}
-.sk2shadow {
-    max-width: 560px;
-    height: 10px;
-    background-color: #78c3a8;
-    margin-left: 40px;
-    margin-right: 40px;
-    position: relative;
-}
-.sk3shadow {
-    max-width: 560px;
-    height: 10px;
-    background-color: #78c3a8;
-    margin-left: 40px;
-    margin-right: 40px;
-    position: relative;
-}
-.sk4shadow {
-    max-width: 560px;
-    height: 10px;
-    background-color: #78c3a8;
-    margin-left: 40px;
-    margin-right: 40px;
-    position: relative;
-}
-.sk1crcl {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    background-color: #fff;
-}
-.sk2crcl {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    background-color: #fff;
-}
-.sk3crcl {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    background-color: #fff;
-}
-.sk4crcl {
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    background-color: #fff;
-}
+
 .work {
     margin: 20px 0 0 0;
     padding: 0;
@@ -344,3 +258,27 @@ input {
 label {
     width: 100%;
 }
+html, body, main, article, footer, nav {
+    max-width: 1900px;
+}
+  #menu ul li {
+    float: none;
+    display: block;
+  }
+  #menu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #99a4a0;
+  }
+  #menu ul li.last > a,
+  #menu ul li:last-child > a {
+    border: 0;
+  }
+  #menu ul li a:after {
+    display: none;
+  }
+  #menu ul li a:before {
+    display: none;
+  }
