@@ -54,7 +54,7 @@ main {
     text-align: left;
     max-width: 280px;
 }
-#send {
+#send, #subbmit {
     color: #fff;
     background-color: #8ee0c2;
     margin-top: 20px;

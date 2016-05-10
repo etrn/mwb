@@ -71,3 +71,23 @@ $.fn.extend({
 $('#menu-toggle').threeBarToggle({color: 'white', width: 30, height: 25});
 $('#menu').accordionMenu();
 /*MOBILE MENU END*/
+/*FORM*/
+$('#send').click(function() {
+ 
+var  mydata = {
+         name1: name1.value,
+         phn: phn.value,
+         eml: eml.value,
+         msg: msg.value
+         };
+       console.log(mydata);  
+  $.ajax({
+      url: "https://formspree.io/taras.pashko@gmail.com",  
+      method: "POST",
+      data: mydata,
+      dataType: "json"
+  }).done(function() {
+     $('#form').html('<h1 style="margin: 0 auto;">Thank you for your message!</h1>')
+  } );
+});
+/*FORM END*/

@@ -281,34 +281,34 @@
             <article class="contacts">
                 <h1 class="cntme">CONTACT ME</h1>
                 <article class="form">
-                    <form method="POST" action="https://formspree.io/taras.pashko@gmail.com">
+                    <div id="form">
                         <div id="name">
                             <label for="name">NAME:</label>
                             <br>
-                            <input type="text" name="name" required/>
+                            <input type="text" id ="name1" name="name" required/>
                         </div>
                         <div id="phone">
                             <label for="phone">PHONE:</label>
                             <br>
-                            <input type="text" name="phone" required/>
+                            <input id="phn" type="text" name="phone" required/>
                         </div>
                         <div id="email">
                             <label for="email">EMAIL:</label>
                             <br>
-                            <input type="email" name="_replyto" required/>
+                            <input id="eml" type="email" name="_replyto" required/>
                         </div>
                         <div class="clr"></div>
                         <div id="message">
                             <label for="message">MESSAGE:</label>
                             <br>
-                            <textarea rows="5" name="message"></textarea>
+                            <textarea id="msg" rows="5" name="message"></textarea>
                         </div>
                         <div class="butn">    
                             <label for="send"><!--How is right to make the send button as i want to?-->
                             <input id="send" type="submit" value="SEND">
                             </label>
                         </div>
-                    </form>
+                    </div>
                 </article>
             </article>
         </main>

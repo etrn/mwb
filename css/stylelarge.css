@@ -520,7 +520,7 @@ textarea {
     margin-right: 15.8333%;
     margin-left: 15.8333%;
 }
-#send {
+#send, #subbmit {
     color: #fff;
     background-color: #8ee0c2;
     margin-top: 20px;
