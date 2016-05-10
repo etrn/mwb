@@ -16,16 +16,7 @@ html, body, main, article, footer, nav {
     position: absolute;
     top: -20px;
 }
-#menu_mob {
-    display: none;
-}
-#menu_mob_exp {
-    display: none;
-}
-#logotriangle {
-    display: none;
-}
-#logo {
+.mob_nav {
     display: none;
 }
 nav {
@@ -49,14 +40,14 @@ a {
     text-decoration: none;
 }
 /* Menu*/
-#menu {
+#menu_desktop {
     width: 100%;
     position: fixed;
     float: right;
     height: 100px;
     max-width: 1900px;
 }
-#menu ul {
+#menu_desktop ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -66,7 +57,7 @@ a {
     float: right;
     margin-right: 8%;
 }
-#menu ul:after {
+#menu_desktop ul:after {
     content: " ";
     display: block;
     font-size: 0;
@@ -74,18 +65,18 @@ a {
     clear: both;
     visibility: hidden;
 }
-#menu ul li {
+#menu_desktop ul li {
     display: inline-block;
     padding: 0;
     margin: 0;
 }
-#menu.align-right ul li {
+#menu_desktop.align-right ul li {
     float: right;
 }
-#menu.align-center ul {
+#menu_desktop.align-center ul {
     text-align: center;
 }
-#menu ul li a {
+#menu_desktop ul li a {
     color: #ffffff;
     font-size: 18px;
     text-decoration: none;
@@ -103,13 +94,13 @@ a {
     left: 25%;
     top: -15px;
 }
-#menu ul li a:hover {
+#menu_desktop ul li a:hover {
     color: #41ffb8;
 }
-#menu ul li a:hover:before {
+#menu_desktop ul li a:hover:before {
     width: 100%;
 }
-#menu ul li a:before {
+#menu_desktop ul li a:before {
     content: "";
     display: block;
     position: absolute;
@@ -124,21 +115,21 @@ a {
     -o-transition: width .25s;
     transition: width .25s;
 }
-#menu ul li.last > a:after,
-#menu ul li:last-child > a:after {
+#menu_desktop ul li.last > a:after,
+#menu_desktop ul li:last-child > a:after {
     display: none;
 }
-#menu ul li.active a {
+#menu_desktop ul li.active a {
     color: #41ffb8;
 }
-#menu ul li.active a:before {
+#menu_desktop ul li.active a:before {
     width: 100%;
 }
-#menu.align-right li.last > a:after,
-#menu.align-right li:last-child > a:after {
+#menu_desktop.align-right li.last > a:after,
+#menu_desktop.align-right li:last-child > a:after {
     display: block;
 }
-#menu.align-right li:first-child a:after {
+#menu_desktop.align-right li:first-child a:after {
     display: none;
 }
 .menulink {
@@ -163,7 +154,7 @@ a {
     .menulink {
     margin: 0;
 }
-    #menu ul li a {
+    #menu_desktop ul li a {
         top: -60px;
         font-size: 14px;
     }
@@ -172,7 +163,7 @@ a {
     }
 }
 @media screen and (min-width: 1919px) {
-    #menu ul li a {
+    #menu_desktop ul li a {
         float: left;
     }
     #lgt {
@@ -231,8 +222,8 @@ p {
 }
 .skills,
 .skills .skill,
-.skills .skill .skill-title,
-.skills .skill .skill-bar {
+.skills .skill .skill_title,
+.skills .skill .skill_bar {
     width: 100%;
     float: left;
 }
@@ -242,13 +233,13 @@ p {
 .skills .skill {
     margin-bottom: 30px;
 }
-.skills .skill .skill-title {
+.skills .skill .skill_title {
     color: #FFF;
     margin-bottom: 10px;
     font-size: 24px;
     text-align: left;
 }
-.skills .skill .skill-bar {
+.skills .skill .skill_bar {
     width: 0;
     height: 10px;
     background: #78c3a8;
@@ -257,10 +248,10 @@ p {
     -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
     -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
 } 
-.skills.active .skill .skill-bar {
+.skills.active .skill .skill_bar {
     width: 100%;
 }
-.skills .skill .skill-bar span {
+.skills .skill .skill_bar span {
     float: left;
     width: 0%;
     background: #ffffff;
@@ -271,7 +262,7 @@ p {
     -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
     -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
 } 
-.skills .skill .skill-bar span b {
+.skills .skill .skill_bar span b {
     float: left;
     width: 100%;
     position: relative;

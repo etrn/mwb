@@ -15,7 +15,7 @@
         <header>
             <div id="aboutme"></div>
             <nav>
-                <div id="menu">
+                <div id="menu_desktop">
                     <div id="lg">
                         <img id="lgt" src="img/logobackground.png" alt="logo"></img>
                     </div>
@@ -30,10 +30,26 @@
                     </div>
                 </div>
             </nav>
-            <img id="logo" src="img/logo.png" alt="Taras Pashko Name Logo" width="165px" height="65px">
-            <img id="logotriangle" src="img/logotriangle.png" alt="Triangle Taras Pashko Logo" width="120px">
-            <img id="menu_mob" src="img/menu_mob.png" alt="Menu" width="64px" height="48px"></img>
-            <img id="menu_mob_exp" src="img/menu_mob_exp.png" alt="Menu epxanded" widt="51px"></img>
+             <div id="menu_holder">
+                <div class="mob_nav">
+                    <div id="lg_container">
+                        <img id="logo" src="img/logo.png" alt="Taras Pashko Name Logo">
+                    </div>
+                    <div id="lgt_container">
+                        <img id="logotriangle" src="img/logotriangle.png" alt="Triangle Taras Pashko Logo" width="60px">
+                    </div>
+                    <div id="mm">
+                        <h3 id="menu-toggle">Menu</h3>
+                        <ul id="menu">
+                          <li><a href="#aboutme">ABOUT</a></li>
+                          <li><a href="#skills">SKILLS</a></li>
+                          <li><a href="#works">WORKS</a></li>
+                          <li><a href="#testimonials">TESTIMONIALS</a></li> 
+                          <li><a href="#contact">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </header>
         <main>    
             <article class="about">
@@ -150,22 +166,22 @@
                     <div class="container">
                         <div class="skills">
                            <div class="skill">
-                              <div class="skill-title">
+                              <div class="skill_title">
                                  HTML
                               </div>
-                              <div class="skill-bar" data-bar="90"><span></span></div>
+                              <div class="skill_bar" data-bar="90"><span></span></div>
                            </div>
                            <div class="skill">
-                              <div class="skill-title">
+                              <div class="skill_title">
                                  CSS
                               </div>
-                              <div class="skill-bar" data-bar="80"><span></span></div>
+                              <div class="skill_bar" data-bar="80"><span></span></div>
                            </div>
                            <div class="skill">
-                              <div class="skill-title">
+                              <div class="skill_title">
                                  JAVASCRIPT
                               </div>
-                              <div class="skill-bar" data-bar="40"><span></span></div>
+                              <div class="skill_bar" data-bar="40"><span></span></div>
                            </div>
                         </div>
                     </div>
